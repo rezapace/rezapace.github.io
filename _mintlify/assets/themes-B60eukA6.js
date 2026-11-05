@@ -1,1 +1,0 @@
-import{c as e}from"./types-CiTgMxws.js";var t=e([`mint`,`maple`,`palm`,`willow`,`linden`,`almond`,`aspen`,`luma`,`sequoia`]).describe(`Visual theme for the site. Learn more in [available themes](https://www.mintlify.com/docs/themes).`);export{t};

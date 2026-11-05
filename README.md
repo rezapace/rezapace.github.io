@@ -1,14 +1,30 @@
-# Exported documentation
+# rezapace.github.io
 
-## View locally
+Landing page pribadi Reza Hidayat — Backend Golang & Automation Engineer.
 
-Run `node serve.js` (or double-click `Start Docs.command` on macOS, `Start Docs.bat` on Windows) and open `http://localhost:3000`. Requires Node.js.
+Live: https://rezapace.github.io/
 
-## Host on your own server
+## Stack
 
-Serve this folder as static files with these rules:
+Static HTML, CSS, JavaScript. No build step, no framework.
 
-1. **Pages:** a request for `/<path>` serves `<path>/index.html`.
-2. **Caching:** serve `_mintlify/assets/*` and `_mintlify/export-assets/*` with `Cache-Control: public, max-age=31536000, immutable`, and pages with `Cache-Control: no-cache`.
+## Struktur
 
-`serve.js` implements both rules and can be used as a reference.
+```
+index.html
+assets/
+  css/style.css
+  js/main.js
+```
+
+## Jalankan lokal
+
+Buka `index.html` langsung di browser, atau serve pakai static server:
+
+```bash
+python3 -m http.server 8000
+```
+
+## Deploy
+
+Deploy otomatis ke GitHub Pages lewat GitHub Actions (`.github/workflows/deploy.yml`) setiap push ke branch `main`.
