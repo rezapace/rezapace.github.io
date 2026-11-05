@@ -5,11 +5,16 @@ document.getElementById('year').textContent = new Date().getFullYear();
 applyLanguage(getInitialLanguage());
 
 const langToggle = document.getElementById('langToggle');
-langToggle.addEventListener('click', () => {
+const langToggleMobile = document.getElementById('langToggleMobile');
+
+const toggleLanguage = () => {
   const current = document.documentElement.lang === 'id' ? 'id' : 'en';
   const next = current === 'en' ? 'id' : 'en';
   applyLanguage(next);
-});
+};
+
+langToggle.addEventListener('click', toggleLanguage);
+langToggleMobile.addEventListener('click', toggleLanguage);
 
 // Navbar scroll state
 const navbar = document.getElementById('navbar');
@@ -56,3 +61,30 @@ const observer = new IntersectionObserver(
 );
 
 revealTargets.forEach((el) => observer.observe(el));
+
+// Bottom tab bar: active section highlight (mobile)
+const tabbarItems = document.querySelectorAll('.tabbar-item');
+const sectionIds = ['home', 'about', 'experience', 'skills', 'certifications', 'contact'];
+const sections = sectionIds
+  .map((id) => document.getElementById(id))
+  .filter(Boolean);
+
+const setActiveTab = (id) => {
+  tabbarItems.forEach((item) => {
+    item.classList.toggle('active', item.getAttribute('data-section') === id);
+  });
+};
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setActiveTab(entry.target.id);
+      }
+    });
+  },
+  { rootMargin: '-45% 0px -45% 0px', threshold: 0 }
+);
+
+sections.forEach((section) => sectionObserver.observe(section));
+setActiveTab('home');
