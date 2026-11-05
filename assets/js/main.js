@@ -1,6 +1,16 @@
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Language init + toggle
+applyLanguage(getInitialLanguage());
+
+const langToggle = document.getElementById('langToggle');
+langToggle.addEventListener('click', () => {
+  const current = document.documentElement.lang === 'id' ? 'id' : 'en';
+  const next = current === 'en' ? 'id' : 'en';
+  applyLanguage(next);
+});
+
 // Navbar scroll state
 const navbar = document.getElementById('navbar');
 const onScroll = () => {

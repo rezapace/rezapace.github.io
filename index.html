@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reza Hidayat — Backend Golang & Automation Engineer</title>
-<meta name="description" content="Reza Hidayat, Backend Golang & Automation Engineer di Bank Mandiri. Spesialis test automation, CI/CD, dan backend development.">
+<title data-i18n="meta.title">Reza Hidayat — Backend Golang & Automation Engineer</title>
+<meta name="description" data-i18n-attr="content" data-i18n="meta.description" content="Reza Hidayat, Backend Golang & Automation Engineer at Bank Mandiri. Specializing in test automation, CI/CD, and backend development.">
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -17,25 +17,32 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#home" data-i18n="nav.home">Home</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#certifications" data-i18n="nav.certifications">Certifications</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      <li class="lang-switch">
+        <button id="langToggle" class="lang-btn" aria-label="Switch language">
+          <span class="lang-option active" data-lang="en">EN</span>
+          <span class="lang-sep">/</span>
+          <span class="lang-option" data-lang="id">ID</span>
+        </button>
+      </li>
     </ul>
   </div>
 </nav>
 
 <header id="home" class="hero">
   <div class="container hero-inner">
-    <p class="hero-greeting">Halo, saya</p>
+    <p class="hero-greeting" data-i18n="hero.greeting">Hi, I'm</p>
     <h1 class="hero-name">Reza Hidayat</h1>
-    <h2 class="hero-role">Backend Golang &amp; Automation Engineer</h2>
-    <p class="hero-sub">Spesialis test automation di <strong>Bank Mandiri</strong> — membangun sistem otomasi dan kualitas yang mendukung rilis cepat dan aman.</p>
+    <h2 class="hero-role" data-i18n="hero.role">Backend Golang &amp; Automation Engineer</h2>
+    <p class="hero-sub" data-i18n="hero.sub">Test automation specialist at <strong>Bank Mandiri</strong> — building automation and quality systems that support fast, safe releases.</p>
     <div class="hero-cta">
-      <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
-      <a href="#experience" class="btn btn-ghost">Lihat Pengalaman</a>
+      <a href="#contact" class="btn btn-primary" data-i18n="hero.ctaContact">Get in Touch</a>
+      <a href="#experience" class="btn btn-ghost" data-i18n="hero.ctaExperience">View Experience</a>
     </div>
     <div class="hero-socials">
       <a href="https://github.com/rezapace" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
@@ -50,22 +57,22 @@
 
   <section id="about" class="section">
     <div class="container">
-      <p class="section-tag">Tentang</p>
-      <h2 class="section-title">Mengenal Saya</h2>
+      <p class="section-tag" data-i18n="about.tag">About</p>
+      <h2 class="section-title" data-i18n="about.title">Get to Know Me</h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>Saya membantu menjaga keandalan <strong>Livin' by Mandiri</strong> dengan membangun sistem otomasi dan kualitas yang mendukung rilis yang cepat dan aman. Di Bank Mandiri, saya bekerja sebagai Automation Engineer, merancang dan memelihara framework test automation menggunakan Appium dan Selenium, lalu mengintegrasikannya ke pipeline Jenkins CI/CD untuk mengurangi pengujian manual, mempercepat siklus umpan balik, dan memperkuat kepercayaan terhadap rilis.</p>
-          <p>Saya memprioritaskan skenario pengujian berdasarkan risiko bisnis, dan menerjemahkan sinyal kualitas menjadi wawasan yang dapat ditindaklanjuti melalui dashboard dan pelaporan metrik kualitas.</p>
-          <p>Selain bekerja, saya sedang menyelesaikan <strong>Bachelor of Informatics</strong> di Universitas Gunadarma dan aktif mengembangkan kemampuan backend engineering di Golang, REST API, dan arsitektur microservices. Kontribusi terbaru saya mencakup dukungan untuk alur kerja ticketing berbasis AI dan layanan integrasi pembayaran, dengan fokus pada skalabilitas, kemudahan pemeliharaan, dan keandalan.</p>
-          <p>Tujuan saya adalah menjembatani otomasi, quality engineering, dan pengembangan backend — menghadirkan sistem yang tidak hanya dirilis lebih cepat, tetapi juga berjalan andal di production.</p>
+          <p data-i18n="about.p1">I help keep <strong>Livin' by Mandiri</strong> reliable by building automation and quality systems that support fast, safe releases. At Bank Mandiri, I work as an Automation Engineer, designing and maintaining test automation frameworks using Appium and Selenium, then integrating them into Jenkins CI/CD pipelines to reduce manual testing, speed up feedback cycles, and strengthen confidence in releases.</p>
+          <p data-i18n="about.p2">I prioritize test scenarios based on business risk, and translate quality signals into actionable insights through dashboards and quality metric reporting.</p>
+          <p data-i18n="about.p3">Outside of work, I'm completing a <strong>Bachelor of Informatics</strong> at Universitas Gunadarma and actively growing my backend engineering skills in Golang, REST APIs, and microservices architecture. My recent contributions include supporting AI-driven ticketing workflows and payment integration services, with a focus on scalability, maintainability, and reliability.</p>
+          <p data-i18n="about.p4">My goal is to bridge automation, quality engineering, and backend development — delivering systems that not only ship faster, but also run reliably in production.</p>
         </div>
         <div class="about-info">
           <ul class="info-list">
-            <li><span>Lokasi</span>Area DKI Jakarta, Indonesia</li>
-            <li><span>Email</span><a href="mailto:m.rezahidayat.rh@gmail.com">m.rezahidayat.rh@gmail.com</a></li>
-            <li><span>Telepon</span>085138318556</li>
-            <li><span>Bahasa</span>Indonesia (Native), Inggris (Limited Working)</li>
-            <li><span>Pendidikan</span>Bachelor of Informatics — Universitas Gunadarma (2020–2024)</li>
+            <li><span data-i18n="about.location">Location</span>DKI Jakarta Area, Indonesia</li>
+            <li><span data-i18n="about.email">Email</span><a href="mailto:m.rezahidayat.rh@gmail.com">m.rezahidayat.rh@gmail.com</a></li>
+            <li><span data-i18n="about.phone">Phone</span>085138318556</li>
+            <li><span data-i18n="about.languages">Languages</span><span data-i18n="about.languagesValue">Indonesian (Native), English (Limited Working)</span></li>
+            <li><span data-i18n="about.education">Education</span><span data-i18n="about.educationValue">Bachelor of Informatics — Universitas Gunadarma (2020–2024)</span></li>
           </ul>
         </div>
       </div>
@@ -74,26 +81,26 @@
 
   <section id="experience" class="section section-alt">
     <div class="container">
-      <p class="section-tag">Karier</p>
-      <h2 class="section-title">Pengalaman</h2>
+      <p class="section-tag" data-i18n="experience.tag">Career</p>
+      <h2 class="section-title" data-i18n="experience.title">Experience</h2>
       <div class="timeline">
 
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <span class="timeline-date">Jan 2025 – Sekarang</span>
-            <h3>Automation Engineer</h3>
+            <span class="timeline-date" data-i18n="experience.job1.date">Jan 2025 – Present</span>
+            <h3 data-i18n="experience.job1.title">Automation Engineer</h3>
             <p class="timeline-company">PT Bank Mandiri (Persero) Tbk. · Jakarta Raya</p>
             <p class="timeline-sub">Livin' by Mandiri (iOS, Android &amp; Web)</p>
             <ul>
-              <li>Memfilter dan memprioritaskan test case berdasarkan risiko bisnis</li>
-              <li>Merancang skenario otomasi end-to-end yang mencakup alur pengguna utama</li>
-              <li>Mengembangkan dan memelihara skrip Katalon/Appium/Selenium dalam Java (TestNG)</li>
-              <li>Menjalankan regression suite di Jenkins CI/CD; menjalankan ulang setelah setiap build</li>
-              <li>Mencatat defect di Jira, mengoordinasikan perbaikan, dan melakukan retest</li>
-              <li>Memantau metrik kualitas (pass rate, waktu eksekusi) dan membagikan laporan ringkas</li>
+              <li data-i18n="experience.job1.b1">Filter and prioritize test cases based on business risk</li>
+              <li data-i18n="experience.job1.b2">Design end-to-end automation scenarios covering key user flows</li>
+              <li data-i18n="experience.job1.b3">Develop and maintain Katalon/Appium/Selenium scripts in Java (TestNG)</li>
+              <li data-i18n="experience.job1.b4">Run regression suites in Jenkins CI/CD; re-run after every build</li>
+              <li data-i18n="experience.job1.b5">Log defects in Jira, coordinate fixes, and perform retesting</li>
+              <li data-i18n="experience.job1.b6">Monitor quality metrics (pass rate, execution time) and share concise reports</li>
             </ul>
-            <p class="timeline-stack"><strong>Tech Stack:</strong> Java · Katalon · Appium · Selenium WebDriver · TestNG · Jenkins · Git · Jira · Allure Reports</p>
+            <p class="timeline-stack"><strong data-i18n="experience.techStack">Tech Stack:</strong> Java · Katalon · Appium · Selenium WebDriver · TestNG · Jenkins · Git · Jira · Allure Reports</p>
           </div>
         </div>
 
@@ -101,12 +108,12 @@
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <span class="timeline-date">Mar 2023 – Mar 2025</span>
-            <h3>Software Programmer Laboratory</h3>
+            <h3 data-i18n="experience.job2.title">Software Programmer Laboratory</h3>
             <p class="timeline-company">Advanced Management Laboratory · Depok, Jawa Barat</p>
             <ul>
-              <li>Mengajar Management Information Systems, membimbing mahasiswa membangun aplikasi desktop dasar menggunakan Visual Basic 6.0 dan desain database dengan Microsoft Access</li>
-              <li>Mengembangkan dan mengelola website pendaftaran untuk mendukung proses rekrutmen laboratorium menggunakan CodeIgniter</li>
-              <li>Mengelola infrastruktur IT laboratorium, mengawasi lebih dari 100 komputer</li>
+              <li data-i18n="experience.job2.b1">Taught Management Information Systems, guiding students to build basic desktop applications using Visual Basic 6.0 and database design with Microsoft Access</li>
+              <li data-i18n="experience.job2.b2">Developed and managed a registration website to support laboratory recruitment using CodeIgniter</li>
+              <li data-i18n="experience.job2.b3">Managed laboratory IT infrastructure, overseeing 100+ computers</li>
             </ul>
           </div>
         </div>
@@ -114,13 +121,13 @@
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <span class="timeline-date">Agu 2023 – Des 2023</span>
-            <h3>Golang Backend Developer</h3>
+            <span class="timeline-date" data-i18n="experience.job3.date">Aug 2023 – Dec 2023</span>
+            <h3 data-i18n="experience.job3.title">Golang Backend Developer</h3>
             <p class="timeline-company">MIKTI · Depok, Jawa Barat</p>
             <ul>
-              <li>Mengembangkan aplikasi backend untuk ticketing dan integrasi pembayaran dengan implementasi AI</li>
-              <li>Menggunakan pola arsitektur seperti MVC dan microservices untuk layanan backend yang skalabel</li>
-              <li>Mengimplementasikan pipeline CI/CD untuk distribusi perangkat lunak yang efisien dan andal</li>
+              <li data-i18n="experience.job3.b1">Developed backend applications for ticketing and payment integration with AI implementation</li>
+              <li data-i18n="experience.job3.b2">Used architecture patterns such as MVC and microservices to build scalable backend services</li>
+              <li data-i18n="experience.job3.b3">Implemented CI/CD pipelines for efficient and reliable software distribution</li>
             </ul>
           </div>
         </div>
@@ -129,12 +136,12 @@
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <span class="timeline-date">Feb 2023 – Jun 2023</span>
-            <h3>Backend Engineer Internship</h3>
+            <h3 data-i18n="experience.job4.title">Backend Engineer Internship</h3>
             <p class="timeline-company">Alterra Indonesia · Kota Bekasi, Jawa Barat</p>
             <ul>
-              <li>Men-deploy aplikasi menggunakan server AWS</li>
-              <li>Mengembangkan sistem CRUD untuk pemesanan kafe menggunakan Golang</li>
-              <li>Membuat proyek akhir berupa backend panel absensi CRUD menggunakan Golang</li>
+              <li data-i18n="experience.job4.b1">Deployed applications using AWS servers</li>
+              <li data-i18n="experience.job4.b2">Developed a CRUD system for cafe ordering using Golang</li>
+              <li data-i18n="experience.job4.b3">Built a final project: a CRUD attendance panel backend using Golang</li>
             </ul>
           </div>
         </div>
@@ -142,13 +149,13 @@
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <span class="timeline-date">Feb 2022 – Mei 2022</span>
-            <h3>Design &amp; Marketing Internship</h3>
+            <span class="timeline-date" data-i18n="experience.job5.date">Feb 2022 – May 2022</span>
+            <h3 data-i18n="experience.job5.title">Design &amp; Marketing Internship</h3>
             <p class="timeline-company">Kiniku Muda Indonesia · Cikarang Selatan, Jawa Barat</p>
             <ul>
-              <li>Merancang dan menjalankan kampanye pemasaran untuk produk dan layanan TaniPro</li>
-              <li>Membantu membangun ulang aplikasi TaniPro</li>
-              <li>Membuat aplikasi WhatsApp blast untuk pengiriman pesan massal, serta memimpin promosi via WhatsApp dan email</li>
+              <li data-i18n="experience.job5.b1">Designed and ran marketing campaigns to promote TaniPro products and services</li>
+              <li data-i18n="experience.job5.b2">Helped rebuild the TaniPro application</li>
+              <li data-i18n="experience.job5.b3">Built a WhatsApp blast application for efficient mass messaging, and led promotional efforts via WhatsApp and email</li>
             </ul>
           </div>
         </div>
@@ -159,47 +166,47 @@
 
   <section id="skills" class="section">
     <div class="container">
-      <p class="section-tag">Kemampuan</p>
-      <h2 class="section-title">Skills &amp; Tech Stack</h2>
+      <p class="section-tag" data-i18n="skills.tag">Skills</p>
+      <h2 class="section-title" data-i18n="skills.title">Skills &amp; Tech Stack</h2>
       <div class="skills-grid">
 
         <div class="skill-card">
-          <h3>Languages</h3>
+          <h3 data-i18n="skills.languages">Languages</h3>
           <div class="tags">
             <span>Go (Golang)</span><span>Java</span><span>JavaScript</span><span>Python</span>
           </div>
         </div>
 
         <div class="skill-card">
-          <h3>Testing &amp; Automation</h3>
+          <h3 data-i18n="skills.testing">Testing &amp; Automation</h3>
           <div class="tags">
             <span>Selenium WebDriver</span><span>Appium</span><span>Katalon Studio</span><span>TestNG</span><span>Postman API</span><span>Allure Reports</span>
           </div>
         </div>
 
         <div class="skill-card">
-          <h3>DevOps &amp; CI/CD</h3>
+          <h3 data-i18n="skills.devops">DevOps &amp; CI/CD</h3>
           <div class="tags">
             <span>Jenkins</span><span>Docker</span><span>Kubernetes</span><span>Git</span><span>CI/CD</span><span>Ansible</span>
           </div>
         </div>
 
         <div class="skill-card">
-          <h3>Backend &amp; Database</h3>
+          <h3 data-i18n="skills.backend">Backend &amp; Database</h3>
           <div class="tags">
             <span>REST API</span><span>Microservices</span><span>MySQL</span><span>Oracle Database</span><span>JWT</span>
           </div>
         </div>
 
         <div class="skill-card">
-          <h3>Cloud &amp; Security</h3>
+          <h3 data-i18n="skills.cloud">Cloud &amp; Security</h3>
           <div class="tags">
             <span>AWS</span><span>Cybersecurity</span><span>Penetration Testing</span><span>Kali Linux</span><span>Burp Suite</span>
           </div>
         </div>
 
         <div class="skill-card">
-          <h3>Tools &amp; Lainnya</h3>
+          <h3 data-i18n="skills.tools">Tools &amp; Others</h3>
           <div class="tags">
             <span>UiPath</span><span>Jira</span><span>YAML</span><span>CodeIgniter</span><span>Cisco Networking</span>
           </div>
@@ -211,38 +218,38 @@
 
   <section id="certifications" class="section section-alt">
     <div class="container">
-      <p class="section-tag">Kredensial</p>
-      <h2 class="section-title">Sertifikasi Terpilih</h2>
+      <p class="section-tag" data-i18n="certifications.tag">Credentials</p>
+      <h2 class="section-title" data-i18n="certifications.title">Selected Certifications</h2>
       <div class="cert-grid">
         <div class="cert-card"><h4>Docker Certified Associate (DCA) Specialization</h4><p>LearnKartS · Mar 2025</p></div>
         <div class="cert-card"><h4>Jenkins – From Zero to Hero Specialization</h4><p>LearnKartS · Mar 2025</p></div>
-        <div class="cert-card"><h4>Docker and Kubernetes: The Complete Guide</h4><p>Udemy · Mei 2025</p></div>
-        <div class="cert-card"><h4>Kali Linux for Advanced Pen Testing and Ethical Hacking</h4><p>LinkedIn · Des 2025</p></div>
-        <div class="cert-card"><h4>Career Essentials in Cybersecurity by Microsoft</h4><p>Microsoft · Mei 2025</p></div>
-        <div class="cert-card"><h4>Katalon Practitioner Level Certification</h4><p>Katalon · Mar 2025 (berlaku hingga Mar 2027)</p></div>
-        <div class="cert-card"><h4>Golang Backend Developer &amp; Computer Vision/AI</h4><p>MIKTI · Des 2023</p></div>
+        <div class="cert-card"><h4>Docker and Kubernetes: The Complete Guide</h4><p>Udemy · May 2025</p></div>
+        <div class="cert-card"><h4>Kali Linux for Advanced Pen Testing and Ethical Hacking</h4><p>LinkedIn · Dec 2025</p></div>
+        <div class="cert-card"><h4>Career Essentials in Cybersecurity by Microsoft</h4><p>Microsoft · May 2025</p></div>
+        <div class="cert-card"><h4>Katalon Practitioner Level Certification</h4><p>Katalon · Mar 2025 <span data-i18n="certifications.validUntil">(valid until Mar 2027)</span></p></div>
+        <div class="cert-card"><h4>Golang Backend Developer &amp; Computer Vision/AI</h4><p>MIKTI · Dec 2023</p></div>
         <div class="cert-card"><h4>Scalable Web Service with Golang</h4><p>Hacktiv8 Indonesia · Nov 2022</p></div>
-        <div class="cert-card"><h4>ISTQB Advanced Test Automation Engineer</h4><p>Udemy · Mei 2025</p></div>
-        <div class="cert-card"><h4>Java Object-Oriented Programming</h4><p>LinkedIn · Des 2025</p></div>
+        <div class="cert-card"><h4>ISTQB Advanced Test Automation Engineer</h4><p>Udemy · May 2025</p></div>
+        <div class="cert-card"><h4>Java Object-Oriented Programming</h4><p>LinkedIn · Dec 2025</p></div>
         <div class="cert-card"><h4>Rest API Testing (Automation) – Rest Assured Java</h4><p>Udemy · Apr 2025</p></div>
-        <div class="cert-card"><h4>Junior Web Programming</h4><p>Universitas Gunadarma · Jan 2025 (berlaku hingga Jan 2028)</p></div>
+        <div class="cert-card"><h4>Junior Web Programming</h4><p>Universitas Gunadarma · Jan 2025 <span data-i18n="certifications.validUntil2">(valid until Jan 2028)</span></p></div>
       </div>
-      <p class="cert-note">Total 60+ sertifikasi di LinkedIn, mencakup Docker, Jenkins, Selenium, Appium, Cybersecurity, Golang, dan Cloud Computing.</p>
+      <p class="cert-note" data-i18n="certifications.note">60+ certifications on LinkedIn in total, covering Docker, Jenkins, Selenium, Appium, Cybersecurity, Golang, and Cloud Computing.</p>
     </div>
   </section>
 
   <section id="contact" class="section">
     <div class="container contact-inner">
-      <p class="section-tag">Kontak</p>
-      <h2 class="section-title">Mari Terhubung</h2>
-      <p class="contact-sub">Terbuka untuk diskusi seputar automation engineering, backend development, atau sekadar ngobrol tech.</p>
+      <p class="section-tag" data-i18n="contact.tag">Contact</p>
+      <h2 class="section-title" data-i18n="contact.title">Let's Connect</h2>
+      <p class="contact-sub" data-i18n="contact.sub">Open to discussing automation engineering, backend development, or just chatting about tech.</p>
       <div class="contact-grid">
         <a class="contact-card" href="mailto:m.rezahidayat.rh@gmail.com">
-          <span class="contact-label">Email</span>
+          <span class="contact-label" data-i18n="contact.email">Email</span>
           <span class="contact-value">m.rezahidayat.rh@gmail.com</span>
         </a>
         <a class="contact-card" href="tel:+6285138318556">
-          <span class="contact-label">Telepon</span>
+          <span class="contact-label" data-i18n="contact.phone">Phone</span>
           <span class="contact-value">085138318556</span>
         </a>
         <a class="contact-card" href="https://www.linkedin.com/in/rezahidayatrh" target="_blank" rel="noopener noreferrer">
@@ -254,7 +261,7 @@
           <span class="contact-value">rezapace</span>
         </a>
         <a class="contact-card" href="https://devreza.my.id" target="_blank" rel="noopener noreferrer">
-          <span class="contact-label">Website</span>
+          <span class="contact-label" data-i18n="contact.website">Website</span>
           <span class="contact-value">devreza.my.id</span>
         </a>
       </div>
@@ -265,11 +272,12 @@
 
 <footer class="footer">
   <div class="container footer-inner">
-    <p>&copy; <span id="year"></span> Reza Hidayat. Dibangun dengan HTML, CSS &amp; JavaScript.</p>
-    <a href="#home" class="back-top">Kembali ke atas ↑</a>
+    <p>&copy; <span id="year"></span> Reza Hidayat. <span data-i18n="footer.copyright">Built with HTML, CSS &amp; JavaScript.</span></p>
+    <a href="#home" class="back-top" data-i18n="footer.backTop">Back to top ↑</a>
   </div>
 </footer>
 
+<script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
